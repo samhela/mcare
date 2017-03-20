@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<style type="text/css">@import url(css/StyleSheet.css);</style>
+<!-- <style type="text/css">@import url(css/StyleSheet.css);</style> -->
 <!-- <script type="text/javascript">@import url(javaScript/script.js);</script> -->
-<script src="javaScript/jquery-3.1.1.min.js"></script>
+<!-- <link rel = "stylesheet"  type = "text/css"  href = "../../../css/myStyle.css" /> -->
+
+ <link href="<c:url value="/resources/css/StyleSheet.css" />" rel="stylesheet"/>
 <title>Health Care System</title>
 </head>
 <body>
