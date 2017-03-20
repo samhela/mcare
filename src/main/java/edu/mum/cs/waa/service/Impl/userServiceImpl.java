@@ -14,20 +14,42 @@ import edu.mum.cs.waa.service.UserService;
 @Service
 @Transactional
 public class userServiceImpl implements UserService {
-	
 	@Autowired
-   UserDao userDao;
+	private UserDao userDao;
+
+	@Override
 	public List<User> findAllUsers() {
-		
-		return (List<User>)userDao.findAll();
+	return (List<User>)userDao.findAll();
 	}
-	/*public List<User> findUserByRole(String role) {
-		
-		return userDao.findUserByRole(role);
-	}*/
+
+	@Override
 	public void AddUser(User user) {
-		
 		userDao.save(user);
+		
 	}
+
+	@Override
+	public void delete(String userName) {
+		userDao.delete(userName);
+		
+	}
+	
+//	@Autowired
+//   UserDao userDao;
+//	public List<User> findAllUsers() {
+//		
+//		return (List<User>)userDao.findAll();
+//	}
+//	
+//	public void AddUser(User user) {
+//		
+//		userDao.save(user);
+//	}
+//
+//	@Override
+//	public void delete(String userName) {
+//		userDao.delete(userName);
+//		
+//	}
 
 }

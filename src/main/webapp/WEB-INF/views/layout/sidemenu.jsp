@@ -17,7 +17,7 @@
 	
 	
  <a href="Insur"><spring:message code="add.insurance"/></a><br>	
-	<a href="ShowClientForm"><spring:message code="add.client"/></a><br>
+	<a href="ShowUserForm"><spring:message code="add.user"/></a><br>
 	<a href="#"><spring:message code="add.hospital"/></a><br>
 	<a href="#"><spring:message code="insurance.details"/></a><br>
 	<a href="#"><spring:message code="client.info"/></a><br>

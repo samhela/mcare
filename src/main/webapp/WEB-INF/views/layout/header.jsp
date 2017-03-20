@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet"	href="css/StyleSheet.css">
-<style type="text/css">@import url(css/StyleSheet.css);</style>
+<!-- <style type="text/css">@import url(css/StyleSheet.css);</style> -->
 <title>Login page</title>
 </head>
 <body>
@@ -18,9 +18,9 @@
 			--%>
 		 <div class="PageTitle"> 
 		 
-		 <div class="imagePanel"><img src="images/logo.PNG"></div>
+		 <div class="imagePanel"><img src="/resources/images/logo.PNG"></div>
 		 
-		<div class="imagePanel"><img src="images/insurance.png">	</div>
+		<div class="imagePanel"><img src="/resources/images/insurance.png">	</div>
 		
 		</div> 		
 			

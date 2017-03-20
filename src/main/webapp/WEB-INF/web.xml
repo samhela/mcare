@@ -13,7 +13,6 @@
 		</init-param>
 			
 		
-		
 	
 	</servlet>
 
@@ -25,8 +24,8 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-       		/WEB-INF/spring/context/applicationContext.xml 	
-       		/WEB-INF/spring/context/security-context.xml 
+       		/WEB-INF/spring/webcontext/applicationContext.xml 	
+       		/WEB-INF/spring/webcontext/security-context.xml 
        				
  		</param-value>
 	</context-param>

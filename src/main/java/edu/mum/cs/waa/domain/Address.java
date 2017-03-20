@@ -12,9 +12,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Address implements Serializable {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = -5490034823287996037L;
 	
 	@Id

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>User Details registration form</title>
+<title>Client Registration form</title>
 <link href="<c:url value="/resources/css/StyleSheet.css" />" rel="stylesheet">
 </head>
 <body>
@@ -16,8 +16,7 @@
 <jsp:include page="../layout/sidemenu.jsp"/>
 
 <div class="ContentPanel">
-<h3>Add User details information</h3><hr/>
-
+<h3>Add User Information</h3><hr/>
 <form:form modelAttribute="newUser" action="ShowUserForm" method="post">
 <fieldset>
 <legend>Add new user</legend>

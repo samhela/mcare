@@ -5,7 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<style type="text/css">@import url(css/StyleSheet.css);</style>
+<style type="text/css">@import url(/css/StyleSheet.css);</style>
+
+
+<link href="<c:url value="/resources/css/StyleSheet.css" />" rel="stylesheet">
+    <%-- <script src="<c:url value="/resources/js/jquery.1.10.2.min.js" />"></script>
+    <script src="<c:url value="/resources/js/main.js" />"></script> --%>
+
 <!-- <script type="text/javascript">@import url(javaScript/script.js);</script> -->
 <script src="javaScript/jquery-3.1.1.min.js"></script>
 <title>Health Care System</title>

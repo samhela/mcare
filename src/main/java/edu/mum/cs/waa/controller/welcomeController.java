@@ -17,8 +17,8 @@ import edu.mum.cs.waa.service.UserService;
 @SessionAttributes("user")
 public class welcomeController {
 	
-	@Autowired
-	private UserService userService;
+	/*@Autowired
+	private UserService userService;*/
 	
 	@RequestMapping(value=("/"),method=RequestMethod.GET)
 	public String ShowLoginForm(Model model){
@@ -30,6 +30,12 @@ public class welcomeController {
 		return "home/MainForm";
 	}
 	
+	
+	@RequestMapping(value=("/home"),method=RequestMethod.GET)
+	public String ShowMainPage(Model model)
+	{
+		return "MainForm";
+	}
 		
 	/*@RequestMapping(value=("/login"),method=RequestMethod.POST)
 	public String WelcomePage(User user,Model model,RedirectAttributes redirectAttributes)
@@ -47,11 +53,7 @@ public class welcomeController {
 	}
 
 		
-	@RequestMapping(value=("/home"),method=RequestMethod.GET)
-	public String ShowMainPage(Model model)
-	{
-		return "MainForm";
-	}
+	
 	
 	@RequestMapping(value=("/Insur"),method=RequestMethod.GET)
 	public String ShowInsuranceForm(Model model)
