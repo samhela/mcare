@@ -22,10 +22,10 @@ public class welcomeController {
 	
 	@RequestMapping(value=("/"),method=RequestMethod.GET)
 	public String ShowLoginForm(Model model){
-	//	model.addAttribute("role_admin", userService.findUserByRole("ROLE_ADMIN"));
-		//model.addAttribute("role_user", userService.findUserByRole("ROLE_USER"));
+		model.addAttribute("role_admin", userService.findUserByRole("ROLE_ADMIN"));
+		model.addAttribute("role_user", userService.findUserByRole("ROLE_USER"));
 		//return "Login";
-		System.out.println("haha");
+		//System.out.println("haha");
 		
 		return "home/MainForm";
 	}

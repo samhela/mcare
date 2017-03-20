@@ -12,7 +12,13 @@
 			</param-value>
 		</init-param>
 	</servlet>
+<<<<<<< HEAD
 
+=======
+	
+	
+	
+>>>>>>> 0360cb08a53b6ddce8a3a621def666aef634f1c9
 	<servlet-mapping>
 		<servlet-name>DispatcherServlet</servlet-name>
 		<url-pattern>/</url-pattern>

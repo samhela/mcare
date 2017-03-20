@@ -1,1 +1,4 @@
 /target/
+
+target/classes/edu/mum/cs/waa/controller/welcomeController.class
+*.xml

@@ -10,9 +10,14 @@
 
 	<mvc:annotation-driven enable-matrix-variables="true"/>	
 	<context:component-scan base-package="edu.mum.cs.waa" />
+<<<<<<< HEAD
 	 <mvc:resources mapping="/css/**" location="/css/"/>  
+=======
+	
+	 <mvc:resources mapping="/resources/**" location="resources/css"/>  
+>>>>>>> 0360cb08a53b6ddce8a3a621def666aef634f1c9
 	  <mvc:resources mapping="/javaScript/**" location="/javaScript/**"/>
-	  <mvc:resources location="/images/**" mapping="/images/**"/>  
+	  <mvc:resources location="/resources/images/" mapping="resources/images/**"/>  
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />

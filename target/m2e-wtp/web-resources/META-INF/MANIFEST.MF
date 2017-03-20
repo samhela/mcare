@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: samue
 Build-Jdk: 1.8.0_111
+=======
+Built-By: Firew Abebe
+Build-Jdk: 1.8.0_121
+>>>>>>> 0360cb08a53b6ddce8a3a621def666aef634f1c9
 Created-By: Maven Integration for Eclipse
 
