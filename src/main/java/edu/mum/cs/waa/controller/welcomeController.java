@@ -17,8 +17,8 @@ import edu.mum.cs.waa.service.UserService;
 @SessionAttributes("user")
 public class welcomeController {
 	
-	@Autowired
-	private UserService userService;
+/*	@Autowired
+	private UserService userService;*/
 	
 	@RequestMapping(value=("/"),method=RequestMethod.GET)
 	public String ShowLoginForm(Model model){
