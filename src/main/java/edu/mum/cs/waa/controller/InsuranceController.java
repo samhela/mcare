@@ -22,10 +22,10 @@ import edu.mum.cs.waa.service.InsurancePackageService;
 import edu.mum.cs.waa.service.InsuranceService;
 
 @Controller
-@RequestMapping("/insurance")
+//@RequestMapping("/insurance")
 public class InsuranceController {
 
-	@Autowired
+	/*@Autowired
 	InsuranceService insuranceService;
 
 	@Autowired
@@ -68,13 +68,13 @@ public class InsuranceController {
 	// Edit Insurance Information
 
 	// Delete Insurance Information
-	/*
+	
 	 * ***********************************************************
-	 */
-	/* INSURANCE PACKAGE RELATED STARTS HERE */
-	/*
+	 
+	 INSURANCE PACKAGE RELATED STARTS HERE 
+	
 	 * ************************************************************
-	 */
+	 
 	// List Insurance Package as a JSON
 	@RequestMapping(value = "/insurance/insurancePackages", method = RequestMethod.GET, 
 			produces = {"application/json" })
@@ -104,5 +104,5 @@ public class InsuranceController {
 		}
 		return "insurance/addInsurancePackage";
 	}
-
+*/
 }

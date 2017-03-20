@@ -28,6 +28,7 @@ public class InsuranceServiceImpl implements InsuranceService{
 
 	@Override
 	public Insurance findInsuranceById(long id) {
+		
 		try {
 			Insurance insurance = insuranceRepository.findOne(id);
 			return insurance;
@@ -35,12 +36,20 @@ public class InsuranceServiceImpl implements InsuranceService{
 			e.printStackTrace();
 		}
 		return null;
+		
 	}
 
 	@Override
 	public List<Insurance> findInsuranceByUserId(long userId) {
 		// The implementation is not done on the RepositoryImplementation
-		// lol
+		  
+		try{
+			
+			/*List<Insurance> insuranceList =  insuranceRepository.findInsuranceByUserId(userId);
+			return insuranceList;*/
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		return null;
 	}
 
