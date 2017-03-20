@@ -21,8 +21,9 @@ public class HealthFacility implements Serializable{
 	private String name;
 	private String location;
 	
-	private List<Address>addresses;
-	private List<Physician>physicians;
+	private List<Address> addresses;
+	private List<Physician> physicians;
+	
 	//private List<>
 	
 	public long getId() {

@@ -1,6 +1,6 @@
-package edu.mum.cs.waa.dao;
+package edu.mum.cs.waa.repository;
 
-import java.util.List;
+
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import edu.mum.cs.waa.domain.User;
 
 @Repository
-public interface UserDao extends CrudRepository<User,String> {
+public interface UserDao extends CrudRepository<User,Long> {
 	
 }

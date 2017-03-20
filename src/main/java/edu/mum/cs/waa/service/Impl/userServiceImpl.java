@@ -2,13 +2,14 @@ package edu.mum.cs.waa.service.Impl;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import edu.mum.cs.waa.dao.UserDao;
 import edu.mum.cs.waa.domain.User;
+import edu.mum.cs.waa.repository.UserDao;
 import edu.mum.cs.waa.service.UserService;
 
 @Service

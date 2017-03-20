@@ -16,58 +16,49 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 public class User {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)	
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@NotEmpty
-private String userName;
-	
+	private String userName;
+
 	@NotEmpty
-private String password;
+	private String password;
 
-@OneToOne(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-@Valid
-private UserDetail userDetail;
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@Valid
+	private UserDetail userDetail;
 
-public User(){
-	
-}
+	public User() {
 
+	}
 
-public String getUserName() {
-	return userName;
-}
+	public String getUserName() {
+		return userName;
+	}
 
-public void setUserName(String userName) {
-	this.userName = userName;
-}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-public String getPassword() {
-	return password;
-}
+	public String getPassword() {
+		return password;
+	}
 
-public void setPassword(String password) {
-	this.password = password;
-}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
+	public UserDetail getUserDetail() {
+		return userDetail;
+	}
 
+	public void setUserDetail(UserDetail userDetail) {
+		this.userDetail = userDetail;
+	}
 
-public UserDetail getUserDetail() {
-	return userDetail;
-}
+	public User(String userName, String password, String role) {
+		this.userName = userName;
+		this.password = password;
 
-public void setUserDetail(UserDetail userDetail) {
-	this.userDetail = userDetail;
-}
-
-public User(String userName,String password,String role){
-	this.userName=userName;
-	this.password=password;
-	
-}
-
-
-
+	}
 
 }
-
-
-
