@@ -16,8 +16,14 @@
 	
 	 <mvc:resources mapping="/resources/**" location="/resources/"/>  
 
+<<<<<<< HEAD
 	 <!--  <mvc:resources mapping="/javaScript/**" location="/javaScript/**"/>
 	  <mvc:resources location="/resources/images/" mapping="resources/images/**"/> -->  
+=======
+	  <mvc:resources mapping="/javaScript/**" location="/javaScript/**"/>
+
+	  <mvc:resources location="/resources/images/" mapping="resources/images/**"/>  
+>>>>>>> origin/master
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />

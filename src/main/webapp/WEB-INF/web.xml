@@ -11,9 +11,12 @@
 				/WEB-INF/spring/webcontext/DispatcherServlet-context.xml				
 			</param-value>
 		</init-param>
+<<<<<<< HEAD
 			
 		
 	
+=======
+>>>>>>> origin/master
 	</servlet>
 
 	<servlet-mapping>
@@ -24,8 +27,13 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
+<<<<<<< HEAD
        		/WEB-INF/spring/webcontext/applicationContext.xml 	
        		/WEB-INF/spring/webcontext/security-context.xml 
+=======
+       		/WEB-INF/spring/webcontext/applicationContext.xml
+       		/WEB-INF/spring/webcontext/security-context.xml
+>>>>>>> origin/master
        				
  		</param-value>
 	</context-param>
