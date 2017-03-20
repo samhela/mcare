@@ -5,7 +5,6 @@ import java.util.List;
 import edu.mum.cs.waa.domain.User;
 
 public interface UserService {
-	List<User>findAllUsers();
-	public List<User> findUserByRole(String role);
+	List<User>findAllUsers();	
 	public void AddUser(User user);
 }

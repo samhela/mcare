@@ -17,24 +17,20 @@ import edu.mum.cs.waa.service.UserService;
 @SessionAttributes("user")
 public class welcomeController {
 	
-	@Autowired
-	private UserService userService;
+/*	@Autowired
+	private UserService userService;*/
 	
 	@RequestMapping(value=("/"),method=RequestMethod.GET)
 	public String ShowLoginForm(Model model){
-		model.addAttribute("role_admin", userService.findUserByRole("ROLE_ADMIN"));
-		model.addAttribute("role_user", userService.findUserByRole("ROLE_USER"));
+		//model.addAttribute("role_admin", userService.findUserByRole("ROLE_ADMIN"));
+		//model.addAttribute("role_user", userService.findUserByRole("ROLE_USER"));
 		//return "Login";
-		//System.out.println("haha");
+		
 		
 		return "home/MainForm";
 	}
 	
-	@RequestMapping(value ={"/test"})
-	public void hi(){
-		System.out.println("hi");
-	}
-	
+		
 	/*@RequestMapping(value=("/login"),method=RequestMethod.POST)
 	public String WelcomePage(User user,Model model,RedirectAttributes redirectAttributes)
 	{ 

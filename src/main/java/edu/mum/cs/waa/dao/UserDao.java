@@ -2,10 +2,12 @@ package edu.mum.cs.waa.dao;
 
 import java.util.List;
 
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
 import edu.mum.cs.waa.domain.User;
 
-public interface UserDao {
-	public List<User>findAllUsers();
-	public List<User> findUserByRole(String role);
- public void AddUser(User user);
+@Repository
+public interface UserDao extends CrudRepository<User,String> {
+	
 }
