@@ -14,6 +14,7 @@ public class HealthFacility implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 3418261888039156767L;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;

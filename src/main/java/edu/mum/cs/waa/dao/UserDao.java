@@ -7,5 +7,5 @@ import edu.mum.cs.waa.domain.User;
 public interface UserDao {
 	public List<User>findAllUsers();
 	public List<User> findUserByRole(String role);
- public void AddUser(User user);
+	public void AddUser(User user);
 }

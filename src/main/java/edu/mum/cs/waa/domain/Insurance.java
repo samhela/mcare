@@ -15,9 +15,12 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.validation.Valid;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
+//Named Query
 public class Insurance implements Serializable 
 {
 	/**
@@ -27,23 +30,31 @@ public class Insurance implements Serializable
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+	
 	@NotEmpty
+	@Size(min=4, max=20, message="{Insurance.validation.insuranceName}")
 	private String insuranceName;//name of insurance company
+	
 	@NotEmpty
 	private String description;
 	
 	@Valid
 	@OneToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	@JoinColumn(name="address_id")
-	private List<Address>addresses;
+	private List<Address> addresses;
 	
 	@Valid
 	@ManyToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-	@JoinTable(name="Insurance")
+	@JoinTable(name="Insurance_HealthFacility",
+						joinColumns = @JoinColumn(name="insurance_Id") ,
+						inverseJoinColumns = @JoinColumn(name="hospital_Id"))
 	private List<HealthFacility> hospitals;
 	
 	@Valid
-	@
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@JoinTable(name="Insurance_InsurancePackage",
+			joinColumns = @JoinColumn(name="insurance_Id") ,
+			inverseJoinColumns = @JoinColumn(name="insurancePackage_Id"))
 	private List<InsurancePackage> insurancePackages;
 	
 	
