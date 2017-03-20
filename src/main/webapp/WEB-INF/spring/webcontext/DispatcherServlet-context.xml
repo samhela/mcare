@@ -11,19 +11,16 @@
 	<mvc:annotation-driven enable-matrix-variables="true"/>	
 	
 	<!-- this is corrected one -->
-	<context:component-scan base-package="edu.mum.cs.waa.controller" />
-	
+	<context:component-scan base-package="edu.mum.cs.waa.controller" />	
 	
 	 <mvc:resources mapping="/resources/**" location="/resources/"/>  
-
-<<<<<<< HEAD
 	 <!--  <mvc:resources mapping="/javaScript/**" location="/javaScript/**"/>
 	  <mvc:resources location="/resources/images/" mapping="resources/images/**"/> -->  
-=======
+
 	  <mvc:resources mapping="/javaScript/**" location="/javaScript/**"/>
 
 	  <mvc:resources location="/resources/images/" mapping="resources/images/**"/>  
->>>>>>> origin/master
+
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />

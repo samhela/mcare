@@ -7,5 +7,5 @@ import edu.mum.cs.waa.domain.User;
 public interface UserService {
 	List<User>findAllUsers();	
 	public void AddUser(User user);
-	public void delete(String userName);
+	public void delete(long userName);
 }
