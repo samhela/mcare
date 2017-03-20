@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Mcare:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Mcare-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="mcare.war">
       <element id="artifact" artifact-name="Mcare:war exploded" />
     </root>
   </artifact>
