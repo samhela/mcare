@@ -12,10 +12,37 @@ private UserDetail userDetail;
 public User(){
 	
 }
-public User(String userName,String password,String role){
-	this.userName=userName;
-	this.password=password;
-	//this.role=role;
+
+public String getUserName() {
+	return userName;
+}
+
+public void setUserName(String userName) {
+	this.userName = userName;
+}
+
+public String getPassword() {
+	return password;
+}
+
+public void setPassword(String password) {
+	this.password = password;
+}
+
+public List<UserProfile> getProfiles() {
+	return profiles;
+}
+
+public void setProfiles(List<UserProfile> profiles) {
+	this.profiles = profiles;
+}
+
+public UserDetail getUserDetail() {
+	return userDetail;
+}
+
+public void setUserDetail(UserDetail userDetail) {
+	this.userDetail = userDetail;
 }
 
 
